@@ -1,0 +1,33 @@
+import javax.swing.JOptionPane;
+
+public class MaquinaDeVendas {
+
+	public static void main(String[] args) {
+		
+		double moedas, total=0.01;
+		
+		for(int i=0;total <= 0.45;i++) {
+			moedas = Double.parseDouble(JOptionPane.showInputDialog("Insira a moeda na Máquina:"));
+		if((moedas == 0.25) || (moedas == 0.10)) {
+				total = total + moedas;
+				
+				if(total>=0.45) {
+					JOptionPane.showMessageDialog(null,"Pode retirar o seu Refrigerante!");
+				}
+				
+			}
+	
+			else {
+				JOptionPane.showMessageDialog(null,"Não aceitamos esta moeda, infelizmente você perdeu o seu dinheiro!");
+			}
+		}
+			
+		
+		}
+		
+		
+		
+		
+		
+
+	}
